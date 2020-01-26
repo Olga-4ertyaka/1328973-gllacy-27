@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ольга Кучеренко](https://up.htmlacademy.ru/htmlcss/27/user/1328973).
-* Наставник: [!Михаил  Поданев!](https://up.htmlacademy.ru/htmlcss/27/user/63947).
+* Наставник: [Михаил  Поданев](https://up.htmlacademy.ru/htmlcss/27/user/63947).
 
 ---
 
