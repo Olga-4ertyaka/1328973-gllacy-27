@@ -140,8 +140,11 @@
       <h2>Подписка на рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <input placeholder="email@example.com">
-      <button type="submit">Отправить</button>
+      <form class="mailing" method="post">
+        <p><label for="mailing-email">Электронная почта</label>
+          <input type="email" name="mailing-email" id="mailing-email" placeholder="Электронная почта"></p>
+        <button type="submit">Отправить</button>
+      </form>
     </section>
 
     <section>
@@ -181,11 +184,41 @@
   </footer>
 
   <section>
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <button type="button">Закрыть</button>
+    <h2>Поиск</h2>
+    <form class="search" method="post">
+      <label for="search">Поиск</label>
+      <input type="search" name="search" id="search" placeholder="Что ищем?">
+    </form>
   </section>
+
+  <section>
+    <h2>Вход</h2>
+    <form class="login" method="post">
+      <p><label for="login-email">Электронная почта</label>
+        <input type="email" name="email" id="login-email" placeholder="Электронная почта"></p>
+      <p><label for="login-password">Пароль</label>
+        <input type="password" name="password" id="login-password" placeholder="Пароль"></p>
+      <button type="submit">Вход</button>
+      <p><a href="#">Забыли пароль?</a></p>
+      <p><a href="#">Новая регистрация</a></p>
+    </form>
+  </section>
+
+  <section>
+    <h2>Форма обратной связи</h2>
+    <h3>Мы обязательно Вам ответим!</h3>
+    <button type="button">х</button>
+    <form class="feedback" method="post">
+      <p><label for="feedback-name">Как Вас зовут?</label>
+        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как Вас зовут?"></p>
+      <p><label for="feedback-email">Электронная почта</label>
+        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"></p>
+      <p><label for="feedback-text">Напишите что-нибудь...</label>
+        <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea></p>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
 
 </body>
 
