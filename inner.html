@@ -27,17 +27,51 @@
                 <li><a href="#">Доставка и оплата</a></li>
                 <li><a href="#">О Компании</a></li>
             </ul>
-            <ul>
-                <li>
-                    <button type="button">Поиск</button>
-                </li>
-                <li>
-                    <button type="button">Вход</button>
-                </li>
-                <li>
-                    <button type="button">Корзина</button>
-                </li>
-            </ul>
+            <p><button type="button"><span class="visually-hidden">Поиск</span></button></p>
+            <div>
+                <h2 class="visually-hidden">Поиск</h2>
+                <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <input type="search" name="search" id="search" placeholder="Что ищем?">
+                </form>
+            </div>
+
+            <p><button type="button">Вход</button></p>
+            <div>
+                <h2 class="visually-hidden">Вход</h2>
+                <form class="login" action="https://echo.htmlacademy.ru" method="post">
+                    <p><label class="visually-hidden" for="login-email">Электронная почта</label>
+                        <input type="email" name="email" id="login-email" placeholder="Электронная почта"></p>
+                    <p><label class="visually-hidden" for="login-password">Пароль</label>
+                        <input type="password" name="password" id="login-password" placeholder="Пароль"></p>
+                    <button type="submit">Войти</button>
+                    <p><a href="#">Забыли пароль?</a></p>
+                    <p><a href="#">Новая регистрация</a></p>
+                </form>
+            </div>
+
+            <p><button type="button">Пусто</button></p>
+            <div>
+                <h2 class="visually-hidden">Корзина</h2>
+                <form class="cart" action="https://echo.htmlacademy.ru" method="post">
+                    <p><button type="button">х</button>
+                        <img src="img/product-1.jpg" width="30" height="30"
+                            alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+                        <span>Пломбир с апельсиновым джемом</span>
+                        <span>1,5 кг х <span>200 руб.</span></span>
+                        <span>300 руб.</span></p>
+                    <p><button type="button">х</button>
+                        <img src="img/product-3.jpg" width="30" height="30"
+                            alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+                        <span>Клубничный пломбир с присыпкой из белого шоколада</span>
+                        <span>1,5 кг х <span>300 руб.</span></span>
+                        <span>450 руб.</span></p>
+                    <hr>
+                    <p>Итого: 750 руб.</p>
+                    <button type="submit">Оформить заказ</button>
+                </form>
+            </div>
+
         </nav>
         <p>
             С 10 до 20, ежедневно <span>8 812 450-25-25</span>
@@ -45,12 +79,12 @@
     </header>
 
     <main class="container">
-        <h1 class="page-title">Сливочное мороженое</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="inner.html">Каталог</a></li>
             <li class="breadcrumbs-current">Сливочное</li>
         </ul>
+        <h1 class="page-title">Сливочное мороженое</h1>
 
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -142,10 +176,10 @@
 
     <footer>
         <ul>
-            <li><a href="#">Твиттер</a></li>
-            <li><a href="#">Инстаграм</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Вконтакте</a></li>
+            <li><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
         </ul>
         <ul>
             <li><a href="#">Для Поставщиков</a></li>
@@ -158,26 +192,6 @@
         <p><a href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
     </footer>
 
-    <section>
-        <h2>Корзина</h2>
-        <form class="cart" method="post">
-            <p><button type="button">х</button>
-                <img src="img/product-1.jpg" width="30" height="30"
-                    alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-                <span>Пломбир с апельсиновым джемом</span>
-                <span>1,5 кг х <span>200 руб.</span></span>
-                <span>300 руб.</span></p>
-            <p><button type="button">х</button>
-                <img src="img/product-3.jpg" width="30" height="30"
-                    alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-                <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span>1,5 кг х <span>300 руб.</span></span>
-                <span>450 руб.</span></p>
-            <hr>
-            <p>Итого: 750 руб.</p>
-            <button type="submit">Оформить заказ</button>
-        </form>
-    </section>
 
 </body>
 

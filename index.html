@@ -27,17 +27,35 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
-      <ul>
-        <li>
-          <button type="button">Поиск</button>
-        </li>
-        <li>
-          <button type="button">Вход</button>
-        </li>
-        <li>
-          <button type="button">Корзина</button>
-        </li>
-      </ul>
+
+      <p><button type="button"><span class="visually-hidden">Поиск</span></button></p>
+      <div>
+        <h2 class="visually-hidden">Поиск</h2>
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input type="search" name="search" id="search" placeholder="Что ищем?">
+        </form>
+      </div>
+
+      <p><button type="button">Вход</button></p>
+      <div>
+        <h2 class="visually-hidden">Вход</h2>
+        <form class="login" action="https://echo.htmlacademy.ru" method="post">
+          <p><label class="visually-hidden" for="login-email">Электронная почта</label>
+            <input type="email" name="email" id="login-email" placeholder="Электронная почта"></p>
+          <p><label class="visually-hidden" for="login-password">Пароль</label>
+            <input type="password" name="password" id="login-password" placeholder="Пароль"></p>
+          <button type="submit">Войти</button>
+          <p><a href="#">Забыли пароль?</a></p>
+          <p><a href="#">Новая регистрация</a></p>
+        </form>
+      </div>
+
+      <div>
+        <h2 class="visually-hidden">Корзина</h2>
+        <button type="button">Пусто</button>
+      </div>
+
     </nav>
     <p>
       С 10 до 20, ежедневно <span>8 812 450-25-25</span>
@@ -46,10 +64,10 @@
 
   <main>
 
-    <h1>Магазин мороженого «Глейси Шоп»</h1>
+    <h1 class="visually-hidden">Магазин мороженого «Глейси Шоп»</h1>
 
     <section>
-      <h2>Слайдер</h2>
+      <h2 class="visually-hidden">Слайдер</h2>
       <ul>
         <li>
           <img src="img/sliders1-ice-left.png" width="372" height="584" alt="Крем-брюле">
@@ -73,7 +91,7 @@
     </section>
 
     <section>
-      <h2>Специальные предложения (актуальные акции)</h2>
+      <h2 class="visually-hidden">Специальные предложения (актуальные акции)</h2>
       <ul>
         <li>
           <h3>Малинка даром!</h3>
@@ -90,7 +108,7 @@
     </section>
 
     <section>
-      <h2>Хиты продаж</h2>
+      <h2 class="visually-hidden">Хиты продаж</h2>
       <ul>
         <li>
           <img src="img/product-1.jpg" width="267" height="267"
@@ -119,7 +137,8 @@
     </section>
 
     <section>
-      <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собсвенного производства на развес</h2>
+      <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженного собсвенного
+        производства на развес</h2>
       <ul>
         <li>
           <p>Все наше мороженое изготавливаетс на собственном производстве, с использованием современного оборудования и
@@ -145,18 +164,18 @@
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </section>
     <section>
-      <h2>Подписка на рассылку</h2>
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="mailing" method="post">
-        <p><label for="mailing-email">Электронная почта</label>
+        <p><label for="mailing-email" class="visually-hidden">Электронная почта</label>
           <input type="email" name="mailing-email" id="mailing-email" placeholder="Электронная почта"></p>
         <button type="submit">Отправить</button>
       </form>
     </section>
 
     <section>
-      <h2>Карта</h2>
+      <h2 class="visually-hidden">Карта</h2>
       <!-- Тут будет карта-->
       <div>
         <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -164,8 +183,21 @@
         <p> Для заказов по телефону</p>
         <p>8 812 450-25-25</p>
         <p>(с 10 до 20 ежедневно)</p>
-        <p><a href="#">Форма обратной связи</a></p>
-        <!-- Здесь будет форма -->
+        <p><button type="button"><span class="visually-hidden">Форма обратной связи</span></button></p>
+        <div>
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <h3>Мы обязательно Вам ответим!</h3>
+          <button type="button">х</button>
+          <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+            <p><label for="feedback-name" class="visually-hidden">Как Вас зовут?</label>
+              <input type="text" name="feedback-name" id="feedback-name" placeholder="Как Вас зовут?"></p>
+            <p><label for="feedback-email" class="visually-hidden">Электронная почта</label>
+              <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"></p>
+            <p><label for="feedback-text" class="visually-hidden">Напишите что-нибудь...</label>
+              <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea></p>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -174,10 +206,10 @@
   <footer>
     <div>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
     </div>
     <ul>
@@ -190,43 +222,6 @@
           alt="Логотип HTML Academy"></a></p>
     <p><a href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
   </footer>
-
-  <section>
-    <h2>Поиск</h2>
-    <form class="search" method="post">
-      <label for="search">Поиск</label>
-      <input type="search" name="search" id="search" placeholder="Что ищем?">
-    </form>
-  </section>
-
-  <section>
-    <h2>Вход</h2>
-    <form class="login" method="post">
-      <p><label for="login-email">Электронная почта</label>
-        <input type="email" name="email" id="login-email" placeholder="Электронная почта"></p>
-      <p><label for="login-password">Пароль</label>
-        <input type="password" name="password" id="login-password" placeholder="Пароль"></p>
-      <button type="submit">Вход</button>
-      <p><a href="#">Забыли пароль?</a></p>
-      <p><a href="#">Новая регистрация</a></p>
-    </form>
-  </section>
-
-  <section>
-    <h2>Форма обратной связи</h2>
-    <h3>Мы обязательно Вам ответим!</h3>
-    <button type="button">х</button>
-    <form class="feedback" method="post">
-      <p><label for="feedback-name">Как Вас зовут?</label>
-        <input type="text" name="feedback-name" id="feedback-name" placeholder="Как Вас зовут?"></p>
-      <p><label for="feedback-email">Электронная почта</label>
-        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"></p>
-      <p><label for="feedback-text">Напишите что-нибудь...</label>
-        <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea></p>
-      <button type="submit">Отправить</button>
-    </form>
-  </section>
-
 
 </body>
 
