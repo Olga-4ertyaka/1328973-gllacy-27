@@ -95,7 +95,75 @@
 
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--Здесь будет форма-->
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <label for="filter-popularity" class="visually-hidden">По популярности</label>
+                    <input type="submit" name="sorting" value="По популярности" id="filter-popularity">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Цена: <output id="out-filter-min" for="filter-min" name="min-price">100</output> руб. -
+                        <output id="out-filter-max" for="filter-max" name="max-price">500</output> руб.</legend>
+                    <label for="filter-min"><span class="visually-hidden">Выбор цены</span></label>
+                    <div>
+                        <input type="range" name="filter-min" min="0" max="800" value="100" step="1" id="filter-min"
+                            oninput="funMin()">
+                        <input type="range" name="filter-max" min="0" max="800" value="500" step="1" id="filter-max"
+                            oninput="funMax()">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Жирность:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="product-group" value="low-fat" id="filter-low-fat">
+                            <label for="filter-low-fat">0%</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="product-group" value="smaller-10" id="filter-smaller-10" checked>
+                            <label for="filter-smaller-10">До 10%</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="product-group" value="smaller-30" id="filter-smaller-30">
+                            <label for="filter-smaller-30">До 30%</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="product-group" value="larger-30" id="filter-larger-30">
+                            <label for="filter-larger-30">Выше 30%</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Наполнители:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                            <label for="filter-chocolate">шоколадные</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="sugar-powders" id="filter-sugar-powders">
+                            <label for="filter-sugar-powders">сахарные присыпки</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="fruit" id="filter-fruit">
+                            <label for="filter-fruit">фрукты</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="syrups" id="filter-syrups">
+                            <label for="filter-syrups">сиропы</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="jams" id="filter-jams">
+                            <label for="filter-jams">джемы</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">
+                    Применить
+                </button>
+            </form>
         </section>
 
         <section class="catalog">
@@ -198,6 +266,19 @@
                     alt="Логотип HTML Academy"></a></p>
         <p><a href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
     </footer>
+
+    <script>
+        function funMin() {
+            var rng = document.getElementById('filter-min'); //Input
+            var p = document.getElementById('out-filter-min'); //Output
+            p.innerHTML = rng.value;
+        }
+        function funMax() {
+            var rng = document.getElementById('filter-max'); //Input
+            var p = document.getElementById('out-filter-max'); //Output
+            p.innerHTML = rng.value;
+        } 
+    </script>
 
 
 </body>
