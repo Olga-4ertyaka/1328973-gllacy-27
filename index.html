@@ -154,17 +154,17 @@
             проверенных временем технологий.</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__tex">Закупка ингридиентов производится только у проверенных фермерских хозяйств и
+          <p class="about-us__text">Закупка ингридиентов производится только у проверенных фермерских хозяйств и
             компаний, с которыми на
             связывает долговременное сотрудничество.</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__tex">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+          <p class="about-us__text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
             качества. Все
             дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
         <li class="about-us__item">
-          <p class="about-us__tex">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+          <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
             который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -191,30 +191,6 @@
     <section class="map">
       <h2 class="visually-hidden">Карта Гугл</h2>
       <div id="map-googl"></div>
-
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk8JrivABDzktX19qFAc9hYR9xUU79ek8&callback&callback=initMap"></script>
-
-      <script>
-
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map-googl'), {
-            center: { lat: 59.939201, lng: 30.328302 },
-            zoom: 16,
-            disableDefaultUI: true
-          });
-
-          var myLatLng = new google.maps.LatLng(59.938531, 30.323055);
-          var marker = new google.maps.Marker({
-            position: myLatLng,
-            map: map,
-            animation: google.maps.Animation.DROP,
-            icon: 'img/icon-map.png'
-          });
-
-        }
-
-      </script>
 
       <div>
         <p>Адрес главного офиса и офлайн-магазина:</p>
@@ -261,7 +237,9 @@
           height="39" alt="Логотип HTML Academy"></a></p>
     <p><a class="copyright" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
   </footer>
-
+  
+  <script src="js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk8JrivABDzktX19qFAc9hYR9xUU79ek8&callback&callback=initMap"></script>
 </body>
 
 </html>
