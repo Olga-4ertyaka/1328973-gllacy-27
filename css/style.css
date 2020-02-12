@@ -1,0 +1,135 @@
+.popup-hidden,
+.visually-hidden {
+  display: none;
+}
+
+/*  global  */
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: rgb(50, 50, 50);
+    
+    background-color: #849d8f;
+    background-image: url("img/background-sliders1.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+li {
+    list-style-type: none;
+  }
+
+/*  end global  */
+
+/*  header  */
+.nav__item>a {
+line-height: 18px;
+font-weight: 700;
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+.header__timetable__time-schedule {
+  font-size: 14px;
+  line-height: 16.002px;
+  color: rgb(255, 255, 255);
+}
+.header__timetable__phone {
+  font-size: 22px;
+  line-height: 24.002px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+/*  end header  */
+
+/*  breadcrumbs inner  */
+.breadcrumbs__item>a, 
+.breadcrumbs__item
+{
+  font-size: 14px;
+  line-height: 16.002px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+/* end breadcrumbs inner */
+
+/*  section about-us  */
+.about-us__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+/*  end section about-us  */
+
+/*  section store-news  */
+.store-news__title {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(50, 50, 50);
+}
+.store-news__caption>a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+/*  end section store-news  */
+
+/*  section subscription */
+.subscription__text{
+  color: rgb(90, 90, 90);
+}
+/*  end section subscription  */
+
+/*  section catalog  */
+.catalog__item__title>a,
+.bestseller__item__title>a {
+  font-size: 10.502px;
+  line-height: 14.44025px;
+  color: rgb(255, 255, 255);
+}
+.catalog__item__price,
+.bestseller__item__price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+/*  end section catalog  */
+
+/*  map */
+#map-googl{
+  width: 100%;
+  height: 400px;
+  background-color:#dddddd;
+  margin-bottom:100px;
+}
+/* end map  */
+
+
+/*  foother  */
+.footer__menu_item>a {
+  font-size: 13px;
+  line-height: 18.005px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.copyright{
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+}
+/*  end foother  */
+
+
+
+.bestseller__item img {
+    height: 260px;
+    width: 260px;
+    border-radius: 130px;
+}
