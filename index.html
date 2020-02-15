@@ -60,7 +60,7 @@
 
       <div class="nav__cart">
         <h2 class="visually-hidden">Корзина</h2>
-        <button type="button" class="nav__cart_btn">Пусто</button>
+        <button type="button" class="nav__cart__btn">Пусто</button>
       </div>
 
     </nav>
@@ -74,43 +74,48 @@
 
     <h1 class="visually-hidden">Магазин мороженого «Глейси Шоп»</h1>
 
-    <section>
+    <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
-      <ul>
-        <li>
+      <ul class="slider__items">
+        <li class="slider__item">
           <img src="img/sliders1-ice-left.png" width="372" height="584" alt="Крем-брюле">
           <img src="img/sliders1-ice-right.png" width="333" height="519" alt="Пломбир с малиновым джемом">
-          <p>Крем-брюле и пломбир с малиновым джемом</p>
-          <p><a href="#">Давайте оба!</a></p>
+          <p class="slider__item__title">Крем-брюле и пломбир с малиновым джемом</p>
+          <p class="slider__item__btn"><a href="#">Давайте оба!</a></p>
         </li>
-        <li>
+        <!--
+        <li class="slider__item">
           <img src="img/sliders2-ice-left.png" width="372" height="584" alt="Шоколадный пломбир">
           <img src="img/sliders2-ice-right.png" width="333" height="519" alt="Лимоный сорбет">
-          <p>Шоколадный пломбир и лимоный сорбет</p>
-          <p><a href="#">Давайте оба!</a></p>
+          <p class="slider__item__title">Шоколадный пломбир и лимоный сорбет</p>
+          <p class="slider__item__btn"><a href="#">Давайте оба!</a></p>
         </li>
-        <li>
+        <li class="slider__item">
           <img src="img/sliders3-ice-left.png" width="372" height="584" alt="Пломбир с помадкой">
           <img src="img/sliders3-ice-right.png" width="333" height="519" alt="Клубничный щербет">
-          <p>Пломбир с помадкой и клубничный щербет</p>
-          <p><a href="#">Давайте оба!</a></p>
+          <p class="slider__item__title">Пломбир с помадкой и клубничный щербет</p>
+          <p class="slider__item__btn"><a href="#">Давайте оба!</a></p>
         </li>
+        -->
       </ul>
     </section>
 
-    <section>
+
+    <section class="special-offer">
       <h2 class="visually-hidden">Специальные предложения (актуальные акции)</h2>
-      <ul>
+      <ul class="special-offer__items">
         <li>
-          <h3>Малинка даром!</h3>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <p><a href="#">Хочу варенье!</a></p>
+          <h3 class="special-offer__item">Малинка даром!</h3>
+          <p class="special-offer__item__info">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
+            банку малинового варенья бесплатно.</p>
+          <p class="special-offer__item__btn"><a href="#">Хочу варенье!</a></p>
         </li>
         <li>
-          <h3>Шоколадки даром!</h3>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+          <h3 class="special-offer__item">Шоколадки даром!</h3>
+          <p class="special-offer__item__info">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+            шоколадной присыпки совершенно
             бесплатно.</p>
-          <p><a href="#">Хочу шоколадки!</a></p>
+          <p class="special-offer__item__btn"><a href="#">Хочу шоколадки!</a></p>
         </li>
       </ul>
     </section>
@@ -122,7 +127,8 @@
           <img src="img/product-1.jpg" width="267" height="267"
             alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
           <p class="bestseller__item__price">310 ₽<span>/кг</span></p>
-          <p class="bestseller__item__title"><a href="#">Сливочное с апельсиновым джемом и цирусовой стружкой</a></p>
+          <p class="bestseller__item__title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </p>
         </li>
         <li class="bestseller__item">
           <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое с кусочками шоколада">
@@ -167,7 +173,7 @@
           <p class="about-us__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
             который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.</p>
-          </li>
+        </li>
       </ul>
     </section>
 
@@ -177,7 +183,8 @@
     </section>
     <section class="subscription">
       <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+      <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+        вкусного,
         что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form class="subscription__form-mailing" action="https://echo.htmlacademy.ru" method="post">
@@ -192,25 +199,28 @@
       <h2 class="visually-hidden">Карта Гугл</h2>
       <div id="map-googl"></div>
 
-      <div>
-        <p>Адрес главного офиса и офлайн-магазина:</p>
-        <address>ул. Большая Конюшная 19/8, Санкт-Петербург</address>
-        <p> Для заказов по телефону</p>
-        <p>8 812 450-25-25</p>
-        <p>(с 10 до 20 ежедневно)</p>
-        <p><button type="button">Форма обратной связи</button></p>
-        <div class="popup-hidden">
+      <div class="map__contacts">
+        <p class="map__contacts__title">Адрес главного офиса и офлайн-магазина:</p>
+        <address class="map__contacts__address">ул. Большая Конюшная 19/8, Санкт-Петербург</address>
+        <p class="map__contacts__title"> Для заказов по телефону</p>
+        <p class="map__contacts__phone">8 812 450-25-25</p>
+        <p class="map__contacts__time">(с 10 до 20 ежедневно)</p>
+        <p class="map__feedback__btn"><button type="button">Форма обратной связи</button></p>
+        <div class="popup-hidden map__feedback">
           <h2 class="visually-hidden">Форма обратной связи</h2>
-          <h3>Мы обязательно Вам ответим!</h3>
+          <h3 class="map__feedback__content-text">Мы обязательно Вам ответим!</h3>
           <button type="button">х</button>
           <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-            <p><label for="feedback-name" class="visually-hidden">Как Вас зовут?</label>
+            <p class="map__feedback__name"><label for="feedback-name" class="visually-hidden">Как Вас зовут?</label>
               <input type="text" name="feedback-name" id="feedback-name" placeholder="Как Вас зовут?"></p>
-            <p><label for="feedback-email" class="visually-hidden">Электронная почта</label>
-              <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?"></p>
-            <p><label for="feedback-text" class="visually-hidden">Напишите что-нибудь...</label>
+            <p class="map__feedback__email"><label for="feedback-email" class="visually-hidden">Электронная
+                почта</label>
+              <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+            </p>
+            <p class="map__feedback__text"><label for="feedback-text" class="visually-hidden">Напишите
+                что-нибудь...</label>
               <textarea id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea></p>
-            <button type="submit">Отправить</button>
+            <button type="submit" class="map__feedback__btn">Отправить</button>
           </form>
         </div>
       </div>
@@ -237,9 +247,10 @@
           height="39" alt="Логотип HTML Academy"></a></p>
     <p><a class="copyright" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
   </footer>
-  
+
   <script src="js/map.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk8JrivABDzktX19qFAc9hYR9xUU79ek8&callback&callback=initMap"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCk8JrivABDzktX19qFAc9hYR9xUU79ek8&callback&callback=initMap"></script>
 </body>
 
 </html>

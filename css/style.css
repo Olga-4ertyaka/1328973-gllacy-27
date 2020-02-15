@@ -28,6 +28,20 @@ li {
 }
 /*  end global  */
 
+/*  button */
+.nav__login__btn,
+.nav__cart__btn {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: 16.002px;
+}
+.nav__full-cart__btn {
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+  line-height: 16.002px;
+}
+/* end button */
+
 /*  header  */
 .nav__item>a {
   line-height: 18px;
@@ -35,7 +49,6 @@ li {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
 .header__timetable__time-schedule {
   font-size: 14px;
   line-height: 16.002px;
@@ -49,6 +62,44 @@ li {
 }
 /*  end header  */
 
+/*  slider  */
+.slider__item__title{
+  font-size: 60.468px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 60.830808px;
+}
+.slider__item__btn>a {
+  font-size: 30.765px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 40.301875px;
+  text-decoration: none;
+}
+/*  end slider  */
+
+/*  section special-offer  */
+.special-offer__item{
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 26.933px;
+}
+.special-offer__item__info{
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 14.664px;
+}
+.special-offer__item__btn>a{
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 15.996px;
+  text-decoration: none;
+}
+/*  end section special-offer  */
+
 /*  breadcrumbs inner  */
 .breadcrumbs__item>a, 
 .breadcrumbs__item {
@@ -57,7 +108,29 @@ li {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+.page-title{
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 40.985px;
+}
 /* end breadcrumbs inner */
+
+/*  section filters  */
+.filters__parameter{
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  line-height: 16.002px;
+}
+.filters__characteristic{
+  color: rgb(255, 255, 255);
+  line-height: 18px;
+}
+.filters__btn{
+  color: rgb(255, 255, 255);
+  line-height: 18px;
+}
+/*  end section filters  */
 
 /*  section about-us  */
 .about-us__title {
@@ -67,15 +140,12 @@ li {
 /*  end section about-us  */
 
 /*  section store-news  */
-.store-news__title {
-  font-size: 16px;
-  line-height: 22px;
-  color: rgb(50, 50, 50);
-}
 .store-news__caption>a {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 /*  end section store-news  */
 
@@ -108,7 +178,38 @@ li {
   background-color:#dddddd;
   margin-bottom:100px;
 }
+.map__contacts__title,
+.map__contacts__time {
+  font-size: 14px;
+  line-height: 20.006px;
+}
+.map__contacts__address,
+.map__contacts__phone {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.994px;
+  text-decoration: none;
+}
+.map__feedback__btn{
+  font-size: 18px;
+  color: rgb(254, 254, 254);
+  font-weight: 700;
+  line-height: 23.994px;
+}
 /* end map  */
+
+/*   pagination */
+.pagination__item>a {
+  line-height: 18px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.pagination__item__current {
+  line-height: 18px;
+  color: rgb(53, 53, 53);
+  text-decoration: none;
+}
+/*   end pagination */
 
 
 /*  foother  */
