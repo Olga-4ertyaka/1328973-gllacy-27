@@ -29,16 +29,18 @@ li {
 /*  end global  */
 
 /*  button */
+.nav__search,
 .nav__login__btn,
 .nav__cart__btn {
   font-size: 14px;
-  color: rgb(255, 255, 255);
-  line-height: 16.002px;
+  color: #ffffff;
+  line-height: 16px;
+  background-color: #9db1a5;
 }
 .nav__full-cart__btn {
   font-size: 14px;
-  color: rgb(50, 50, 50);
-  line-height: 16.002px;
+  line-height: 16px;
+  background-color: #f7f6f3;
 }
 /* end button */
 
@@ -46,57 +48,60 @@ li {
 .nav__item>a {
   line-height: 18px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
 }
 .header__timetable__time-schedule {
   font-size: 14px;
-  line-height: 16.002px;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  color:#ffffff;
 }
 .header__timetable__phone {
   font-size: 22px;
-  line-height: 24.002px;
-  color: rgb(255, 255, 255);
+  line-height: 24px;
+  color:#ffffff;
   text-decoration: none;
 }
 /*  end header  */
 
 /*  slider  */
 .slider__item__title{
-  font-size: 60.468px;
-  color: rgb(255, 255, 255);
+  font-size: 60px;
+  line-height: 60.35px;
+  color:#ffffff;
   font-weight: 700;
-  line-height: 60.830808px;
+
 }
 .slider__item__btn>a {
-  font-size: 30.765px;
-  color: rgb(255, 255, 255);
+  font-size: 32px;
+  line-height: 44px;
+  color:#ffffff;
   font-weight: 700;
-  line-height: 40.301875px;
+  background-color: #ee5e3e;
   text-decoration: none;
 }
 /*  end slider  */
 
 /*  section special-offer  */
 .special-offer__item{
-  font-size: 23px;
-  color: rgb(255, 255, 255);
+  font-size: 35px;
+  line-height: 41px;
+  color: #ffffff;
   font-weight: 700;
-  line-height: 26.933px;
 }
 .special-offer__item__info{
-  font-size: 12px;
-  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
   font-weight: 700;
-  line-height: 14.664px;
 }
 .special-offer__item__btn>a{
-  font-size: 12px;
-  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
   font-weight: 700;
-  line-height: 15.996px;
   text-decoration: none;
+  background-color: #f06541;
 }
 /*  end section special-offer  */
 
@@ -104,31 +109,32 @@ li {
 .breadcrumbs__item>a, 
 .breadcrumbs__item {
   font-size: 14px;
-  line-height: 16.002px;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  color: #ffffff;
   text-decoration: none;
 }
 .page-title{
   font-size: 35px;
-  color: rgb(255, 255, 255);
+  line-height: 41px;
+  color: #ffffff;
   font-weight: bold;
-  line-height: 40.985px;
 }
 /* end breadcrumbs inner */
 
 /*  section filters  */
 .filters__parameter{
   font-size: 14px;
-  color: rgb(255, 255, 255);
-  line-height: 16.002px;
+  line-height: 16px;
+  color: #ffffff;
 }
 .filters__characteristic{
-  color: rgb(255, 255, 255);
   line-height: 18px;
+  color: #ffffff;
 }
 .filters__btn{
-  color: rgb(255, 255, 255);
   line-height: 18px;
+  color: #ffffff;
+  background-color: #a6b8ae;
 }
 /*  end section filters  */
 
@@ -144,30 +150,42 @@ li {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: #323232;
   text-decoration: none;
 }
 /*  end section store-news  */
 
 /*  section subscription */
 .subscription__text {
-  color: rgb(90, 90, 90);
+  color: #5a5a5a;
+}
+.subscription__inp { 
+  font-size: 18px;
+  line-height: 24px;
+  color:#999999; 
+}
+.subscription__btn {
+  line-height: 24px;
+  color:#fefefe;
+  font-weight: 700;
+  background-color: #ef6140;
+  text-decoration: none; 
 }
 /*  end section subscription  */
 
 /*  section catalog  */
 .catalog__item__title>a,
 .bestseller__item__title>a {
-  font-size: 10.502px;
-  line-height: 14.44025px;
-  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
 }
 .catalog__item__price,
 .bestseller__item__price {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 /*  end section catalog  */
 
@@ -181,27 +199,27 @@ li {
 .map__contacts__title,
 .map__contacts__time {
   font-size: 14px;
-  line-height: 20.006px;
+  line-height: 20px;
 }
 .map__contacts__address,
 .map__contacts__phone {
   font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
-  line-height: 23.994px;
   text-decoration: none;
 }
-.map__feedback__btn{
+.map__feedback__btn {
   font-size: 18px;
-  color: rgb(254, 254, 254);
+  color: #fefefe;
+  line-height: 24px;
   font-weight: 700;
-  line-height: 23.994px;
 }
 /* end map  */
 
 /*   pagination */
 .pagination__item>a {
   line-height: 18px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
 }
 .pagination__item__current {
@@ -215,15 +233,14 @@ li {
 /*  foother  */
 .footer__menu_item>a {
   font-size: 13px;
-  line-height: 18.005px;
-  color: rgb(255, 255, 255);
+  line-height: 16px;
+  color: #ffffff;
   text-decoration: none;
 }
-.copyright{
+.copyright {
   font-size: 12px;
-  line-height: 18px;
-  color: rgb(254, 254, 254);
-  text-decoration: none;
+  line-height: 16px;
+  color: #fefefe
 }
 /*  end foother  */
 
