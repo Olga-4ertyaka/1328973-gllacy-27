@@ -11,9 +11,8 @@
 
 <body>
 
-  <header>
-
-    <nav>
+  <header class="header-top">
+    <nav class="header-nav">
       <a class="logo">
         <img src="img/logo-gllacyshop.png" width="154" height="64" alt="Логотип «Глейси»">
       </a>
@@ -177,23 +176,25 @@
       </ul>
     </section>
 
-    <section class="store-news">
-      <h2 class="store-news__title">Новое в нашем блоге</h2>
-      <p class="store-news__caption"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-    </section>
-    <section class="subscription">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
-      <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
-        вкусного,
-        что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form class="subscription__form-mailing" action="https://echo.htmlacademy.ru" method="post">
-        <p><label for="mailing-email" class="visually-hidden">Электронная почта</label>
-          <input type="email" name="mailing-email" id="mailing-email" placeholder="email@example.com"
-            class="subscription__inp"></p>
-        <button type="submit" class="subscription__btn">Отправить</button>
-      </form>
-    </section>
+    <div class="news-subscription">
+      <section class="store-news">
+        <h2 class="store-news__title">Новое в нашем блоге</h2>
+        <p class="store-news__caption"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+      </section>
+      <section class="subscription">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="subscription__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+          вкусного,
+          что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form class="subscription__form-mailing" action="https://echo.htmlacademy.ru" method="post">
+          <p><label for="mailing-email" class="visually-hidden">Электронная почта</label>
+            <input type="email" name="mailing-email" id="mailing-email" placeholder="email@example.com"
+              class="subscription__inp"></p>
+          <button type="submit" class="subscription__btn">Отправить</button>
+        </form>
+      </section>
+    </div>
 
     <section class="map">
       <h2 class="visually-hidden">Карта Гугл</h2>
@@ -228,7 +229,7 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="socials">
       <ul class="socials__items">
         <li class="socials__item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
@@ -237,15 +238,19 @@
         <li class="socials__item"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
     </div>
-    <ul class="footer__menu">
+    <ul class="footer__menu-left">
       <li class="footer__menu_item"><a href="#">Для Поставщиков</a></li>
       <li class="footer__menu_item"><a href="#">О Производстве</a></li>
+    </ul>
+    <ul class="footer__menu-right">
       <li class="footer__menu_item"><a href="#">Наши документы</a></li>
       <li class="footer__menu_item"><a href="#">Экологические стандарты</a></li>
     </ul>
-    <p><a class="foother__logo" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy-small.png" width="108"
-          height="39" alt="Логотип HTML Academy"></a></p>
-    <p><a class="copyright" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
+    <div class="foother__logo-copyright">
+      <p><a class="foother__logo" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy-small.png" width="108"
+            height="39" alt="Логотип HTML Academy"></a></p>
+      <p><a class="copyright" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
+    </div>
   </footer>
 
   <script src="js/map.js"></script>
