@@ -83,10 +83,10 @@
             </div>
 
         </nav>
-        <ul class="header__timetable">
-            <li class="header__timetable__time-schedule">С 10 до 20, ежедневно </li>
-            <li class="header__timetable__phone">8 812 450-25-25</li>
-        </ul>
+        <div class="header__timetable">
+            <p class="header__timetable__time-schedule">С 10 до 20, ежедневно </p>
+            <p class="header__timetable__phone">8 812 450-25-25</p>
+        </div>
     </header>
 
     <main class="container">
@@ -100,14 +100,13 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
+                <fieldset class="filter">
                     <legend class="filters__parameter">Сортировка:</legend>
                     <label for="filter-popularity" class="visually-hidden filters__characteristic">По
                         популярности</label>
                     <input type="submit" name="sorting" value="По популярности" id="filter-popularity">
                 </fieldset>
-
-                <fieldset>
+                <fieldset class="filter">
                     <legend class="filters__parameter"> Цена: <span class="filters__characteristic">100 руб.</span> -
                         <span class="filters__characteristic">500 руб.</span></legend>
                     <p class="visually-hidden">Выбор цены:</p>
@@ -115,8 +114,7 @@
                     <div class="filter-btn-min"> </div>
                     <div class="filter-btn-max"> </div>
                 </fieldset>
-
-                <fieldset>
+                <fieldset class="filter">
                     <legend class="filters__parameter">Жирность:</legend>
                     <ul class="filters__characteristic">
                         <li class="filters__characteristic">
@@ -137,7 +135,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter">
                     <legend class="filters__parameter">Наполнители:</legend>
                     <ul class="filters__characteristic">
                         <li class="filters__characteristic">
@@ -260,11 +258,9 @@
                 <li class="socials__item"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
             </ul>
         </div>
-        <ul class="footer__menu-left">
+        <ul class="footer__menu">
             <li class="footer__menu_item"><a href="#">Для Поставщиков</a></li>
             <li class="footer__menu_item"><a href="#">О Производстве</a></li>
-        </ul>
-        <ul class="footer__menu-right">
             <li class="footer__menu_item"><a href="#">Наши документы</a></li>
             <li class="footer__menu_item"><a href="#">Экологические стандарты</a></li>
         </ul>
