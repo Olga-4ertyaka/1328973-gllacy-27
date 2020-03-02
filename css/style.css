@@ -369,6 +369,8 @@ li {
 .filters {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 23px;
+    padding-right: : 23px;
 }
 
 .slider {
@@ -423,8 +425,8 @@ li {
 .page-title {
     display: flex;
     width: 100%;
-    padding-left: 27px;
-    padding-right: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .breadcrumbs__item {
@@ -626,14 +628,13 @@ li {
 
 fieldset.filter {
     padding: 0;
+    margin-right: 8px;
 }
 
-.filter:nth-child(1) {
-    width: 194px;
-    height: 36px;
-    border-radius: 36px;
-    background-color: #a8bab0;
-}
+
+/*
+ .filter:nth-child(1) { width: 194px; height: 36px; border-radius: 36px; background-color: #a8bab0; } 
+ */
 
 .filter:nth-child(2) {
     width: 220px;
@@ -1299,13 +1300,40 @@ textarea {
     left: 12px;
 }
 
-.filter:nth-child(1) input {
-    background-color: rgba(250, 250, 250, 0.0);
-    border: none;
+
+/*
+ .filter:nth-child(1) input { background-color: rgba(250, 250, 250, 0.0); border: none; color: #ffffff; position: absolute; top: 8px; left: 15px; } 
+
+ .filter:nth-child(1)::before { content: ""; position: absolute; top: 14px; right: 20px; background: url(../img/svg-gllacy/icon-down-dir-w.svg) top center no-repeat; width: 15px; height: 15px; } 
+
+ .filter:nth-child(1):hover input { color: #000000; } 
+
+ .filter:nth-child(1):hover::before { content: ""; position: absolute; top: 14px; right: 20px; background: url(../img/svg-gllacy/icon-down-dir.svg) top center no-repeat; width: 15px; height: 15px; } 
+*/
+
+.filter select {
+    width: 194px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: #a8bab0;
+    padding-left: 20px;
     color: #ffffff;
-    position: absolute;
-    top: 8px;
-    left: 15px;
+}
+
+.filter select:hover {
+    background-color: #f8f7f4;
+    color: #000;
+}
+
+.filter {
+    position: relative;
+}
+
+.filter select {
+    -webkit-appearance: none;
+    /* Chrome */
+    -moz-appearance: none;
+    /* Firefox */
 }
 
 .filter:nth-child(1)::before {
@@ -1316,10 +1344,6 @@ textarea {
     background: url(../img/svg-gllacy/icon-down-dir-w.svg) top center no-repeat;
     width: 15px;
     height: 15px;
-}
-
-.filter:nth-child(1):hover input {
-    color: #000000;
 }
 
 .filter:nth-child(1):hover::before {
@@ -1392,7 +1416,6 @@ textarea {
     position: relative;
     border: none;
     margin-bottom: 38px;
-    margin-right: 3px;
 }
 
 .filter:nth-child(4) .filters__parameter {
