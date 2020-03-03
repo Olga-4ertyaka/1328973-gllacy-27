@@ -435,7 +435,7 @@ li {
 
 .about-us {
     width: 1146px;
-    height: 310px;
+    min-height: 310px;
     border-radius: 20px;
     margin: 40px auto;
     background-color: #efe3cb;
@@ -507,9 +507,8 @@ li {
 
 .footer {
     display: flex;
-    width: 100%;
+    min-width: 100%;
     height: 102px;
-    /* background-color: #aaaaaa; */
     justify-content: space-between;
 }
 
@@ -939,7 +938,7 @@ button.nav__full-cart__btn {
 
 .catalog-item {
     padding: 10px 13px;
-    height: 360px;
+    min-height: 360px;
     position: relative;
 }
 
@@ -969,12 +968,14 @@ button.nav__full-cart__btn {
 
 /* выпадающая кнопка при ховере */
 
+.bestseller__items .bestseller__item:hover,
 .catalog__items .catalog-item:hover {
     background-color: #9AAEA2;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
+.bestseller__item:hover::before,
 .catalog-item:hover::before {
     content: '';
     position: absolute;
@@ -1011,6 +1012,7 @@ button.nav__full-cart__btn {
     text-decoration: none;
 }
 
+.bestseller__item:hover .cart-hover,
 .catalog-item:hover .cart-hover {
     display: flex;
     border-bottom-left-radius: 5px;
@@ -1071,8 +1073,9 @@ button.nav__full-cart__btn {
 
 .bestseller__item {
     text-align: center;
-    height: 360px;
+    min- height: 360px;
     position: relative;
+    padding: 10px 13px;
 }
 
 .bestseller__item__price {
@@ -1090,7 +1093,7 @@ button.nav__full-cart__btn {
     color: #FFB99D;
 }
 
-.bestseller__item::before {
+.bestseller__item::after {
     content: "";
     position: absolute;
     top: -4px;
@@ -1180,7 +1183,7 @@ button.nav__full-cart__btn {
 }
 
 .map__contacts {
-    height: 302px;
+    min-height: 302px;
     width: 302px;
     border-radius: 10px;
     background-color: #FEFEFE;
