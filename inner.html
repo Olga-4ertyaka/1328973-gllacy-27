@@ -20,7 +20,7 @@
                 <li class="nav__item nav__item__active"><a href="inner.html">Каталог</a>
                     <ul class="nav__submenu__items popup-hidden">
                         <li class="nav__submenu__item"><a href="#">Новинки</a></li>
-                        <li class="nav__submenu__item"><a href="#">Сливочное</a></li>
+                        <li class="nav__submenu__item"><a href="inner.html">Сливочное</a></li>
                         <li class="nav__submenu__item"><a href="#">Щербеты</a></li>
                         <li class="nav__submenu__item"><a href="#">Фруктовый лед</a></li>
                         <li class="nav__submenu__item"><a href="#">Мелорин</a></li>
@@ -155,18 +155,14 @@
             <form method="get" class="filters-sort" action="https://echo.htmlacademy.ru">
                 <fieldset class="filter">
                     <legend class="filters__parameter">Сортировка:</legend>
-                    <!--                    
-                    <label for="filter-popularity" class="visually-hidden filters__characteristic">По
-                        популярности</label>
-                    <input type="submit" name="sorting" value="По популярности" id="filter-popularity">
--->
-                    <select id="filter-popularity" name="select-popularity">
-                        <option value="по популярности">по популярности</option>
-                        <option value="сначала недорогие">сначала недорогие</option>
-                        <option value="сначала дорогие">сначала дорогие</option>
-                        <option value="по жирности">по жирности</option>
-                    </select>
-
+                    <div class="form__select">
+                        <select name="select">
+                            <option value="по популярности">по популярности</option>
+                            <option value="сначала недорогие">сначала недорогие</option>
+                            <option value="сначала дорогие">сначала дорогие</option>
+                            <option value="по жирности">по жирности</option>
+                        </select>
+                    </div>
                 </fieldset>
                 <fieldset class="filter">
                     <legend class="filters__parameter"> Цена: <span class="filters__characteristic">100 руб.</span> -
@@ -400,7 +396,7 @@
         </ul>
         <div class="foother__logo-copyright">
             <p>
-                <a class="foother__logo" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
+                <a class="foother__logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy-small.png" width="108" height="39" alt="Логотип HTML Academy"></a>
             </p>
             <p><a class="copyright" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2019</a></p>
         </div>
