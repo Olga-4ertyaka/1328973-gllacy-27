@@ -878,6 +878,10 @@ button.nav__full-cart__btn {
     margin-right: 0;
 }
 
+.catalog__item__price span{
+    font-size: 30px;
+}
+
 .catalog__item__title {
     text-align: center;
     padding-left: 6px;
@@ -1004,6 +1008,10 @@ button.nav__full-cart__btn {
     margin-top: -60px;
     padding-right: 85px;
     margin-right: 0;
+}
+
+.bestseller__item__price span{
+font-size: 30px;
 }
 
 .bestseller__item__title {
@@ -1801,15 +1809,15 @@ h1 {
     width: 1045px;
     height: 881px;
     box-sizing: border-box;
-    margin: 0 auto;
     position: absolute;
     top: 0;
+    left:calc(50% - 522px);
 }
 
 .slider__item__title {
     position: absolute;
     top: 330px;
-    left: calc(50% - 280px);
+    left: calc(50% - 335px);
     width: 700px;
   
 }
@@ -1823,7 +1831,7 @@ h1 {
     box-shadow: 0px 2px 2px 0 var(--deep-red-64);
     background-image: linear-gradient(to top, #e74a35, #f26843);
     position: absolute;
-    left: calc(50% - 85px);
+    left: calc(50% - 137px);
     top: 542px;
 }
 
@@ -1845,7 +1853,7 @@ h1 {
 .slider-nav {
     display: flex;
     position: absolute;
-    left: -45px;
+    left: -96px;
     top: 558px;
 }
 
@@ -1888,6 +1896,7 @@ h1 {
 
 .nav__search {
     position: relative;
+    z-index: 5;
 }
 
 .nav__search .search-popup-hidden {
@@ -1935,6 +1944,7 @@ h1 {
 
 .nav__login {
     position: relative;
+    z-index: 5;
 }
 
 .nav__login .login-popup-hidden {
