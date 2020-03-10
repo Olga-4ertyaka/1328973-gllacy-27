@@ -2154,13 +2154,45 @@ h1 {
     display: none;
 }
 
+@keyframes bounce {
+    0% { transform: translateY(-2000px); }
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+} 
+
+.text-error{
+    color:red;
+    display:none;
+}
+
+.modal-error .text-error{
+    display: block;
+}
+@keyframes shake {
+    0%,100%                 {transform: translateX(0);      }
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);  }
+    20%, 40%, 60%, 80%      {transform: translateX(10px);   }
+}
+
+.modal-error{
+    animation-name: shake;
+    animation-duration: 0.6s;
+}
+
 .feedback-popup-hidden {
     border-radius: 5px;
     background-color: rgb(248, 247, 244);
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     width: 398px;
-    height: 368px;
-    z-index: 5;
+    min-height: 368px;
+    z-index: 15;
     top: 40px;
     left: -435px;
     padding: 15px;
@@ -2321,9 +2353,6 @@ body { background: url(../img/training-background/gllacy-index.jpg) top center n
 /*
 body { background: url(../img/training-background/gllacy-catalog.jpg) center center no-repeat; }
 */
-
-
-
 
 
 
