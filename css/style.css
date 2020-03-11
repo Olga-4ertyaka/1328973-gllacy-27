@@ -14,8 +14,8 @@ body {
     line-height: 22px;
     font-weight: 400;
     color: rgb(50, 50, 50);
-/*  background-color: #849d8f; */
-    background-image: url("../img/background-sliders1.png");
+    background-color: #849d8f;
+/*  background-image: url("../img/background-sliders1.png"); */
     background-position: top center;
     background-repeat: no-repeat;
 }
