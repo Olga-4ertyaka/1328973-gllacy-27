@@ -9,7 +9,7 @@
 /* global */
 
 body {
-    font-family: "Roboto", "Arial", "sans-serif";
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -43,7 +43,7 @@ body {
     margin: 0 27px;
 }
 
-h1 {
+main h1 {
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
@@ -53,12 +53,14 @@ img {
     max-width: 100%;
 }
 
-a {
+
+.header__timetable__phone a {
     text-decoration: underline;
     color: #ffffff;
 }
 
-li {
+.footer li,
+.container li {
     list-style-type: none;
 }
 
@@ -212,6 +214,7 @@ li {
     line-height: 30px;
     font-weight: 700;
     color: #323232;
+    text-decoration: none;
 }
 
 /* end section store-news */
@@ -244,6 +247,7 @@ li {
     font-weight: 500;
     line-height: 22px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .catalog__item__price,
@@ -317,6 +321,10 @@ li {
     font-size: 12px;
     line-height: 16px;
     color: #fefefe
+}
+
+a.copyright {
+    text-decoration: none;
 }
 
 /* end foother */
@@ -588,14 +596,14 @@ fieldset.filter {
 }
 
 .filter:nth-child(3) {
-    width: 416px;
+    min-width: 416px;
     min-height: 36px;
     border-radius: 36px;
     background-color: #a8bab0;
 }
 
 .filter:nth-child(4) {
-    width: 702px;
+    min-width: 702px;
     min-height: 36px;
     border-radius: 36px;
     background-color: #a8bab0;
@@ -603,7 +611,7 @@ fieldset.filter {
 
 .filters__btn {
     font-weight: 500;
-    width: 146px;
+    width: 144px;
     height: 36px;
     border: 2px solid #f6f8f7;
     border-radius: 36px;
@@ -659,6 +667,7 @@ fieldset.filter {
     padding-left: 14px;
     padding-right: 14px;
     letter-spacing: 0.15px;
+    text-decoration: none;
 }
 
 .nav__submenu__item a {
@@ -769,7 +778,7 @@ button.nav__cart__btn {
 
 button.nav__full-cart__btn {
     background-color: rgba(248, 247, 244, 0.988);
-    width: 117px;
+    min-width: 117px;
     height: 32px;
     border-radius: 16px;
     border: none;
@@ -812,7 +821,7 @@ button.nav__full-cart__btn {
 
 .header__timetable__phone a:hover {
     color: #FFB99D;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav__item a:hover {
@@ -982,7 +991,6 @@ button.nav__full-cart__btn {
 
 .cart-link {
     font-size: 18px;
-    font-family: "Roboto", "Arial", "sans-serif";
     color: rgb(254, 254, 254);
     font-weight: 700;
     line-height: 24px;
@@ -1188,7 +1196,7 @@ p.map__contacts__phone {
 
 .map__contacts__phone a:hover{
     color: #FFB99D;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .map__contacts__time {
@@ -1242,12 +1250,6 @@ a.feedback-form:focus {
 
 .feedback input:active,
 .map__feedback__text textarea:active {
-    outline: none;
-}
-
-.nav__full-cart :focus,
-.nav__login :focus,
-.feedback :focus {
     outline: none;
 }
 
@@ -1351,17 +1353,16 @@ a.feedback-form:focus {
     color: #323232;
 }
 
-select:focus option{
+.filter select:focus option{
     color:#323232;
 }
 
-select::-ms-value{
+.filter select::-ms-value{
     background: none;
     color:#ffffff;
 }
 
-select:hover::-ms-value{
-  
+.filter select:hover::-ms-value{
     color:#323232;
 }
 
@@ -1413,16 +1414,6 @@ select:hover::-ms-value{
     left: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .filter:nth-child(2) {
     background: url("../img/svg-gllacy/price-11.svg") center center no-repeat;
     background-color: #a8bab0;
@@ -1464,30 +1455,29 @@ select:hover::-ms-value{
 }
 
 .filters__fillers {
-    padding: 2px 18px 0 15px;
+    padding: 2px 18px 0 16px;
     margin: 5px 0px
 }
 
 .filters__fillers li {
-    margin: 3px;
+    margin-bottom: 3px;
 }
 
 .filters__btn:hover {
     background-color: #ffffff;
     color: #323232;
+    border:0;
 }
 
 .filters__btn:focus {
     box-shadow: inset 0px 2px 1px 0 #696969;
     background-color: #ededed;
     color: #323232;
+    border: 0;
 }
 
 /* стилизация радио кнопок */
 
-.filters input[type="radio"] {
-    display: none;
-}
 
 .filters input[type="radio"]+label span {
     display: inline-block;
@@ -1509,24 +1499,42 @@ select:hover::-ms-value{
 
 /* стилизация чекбоксов */
 
+.filters input[type="radio"] ,
 .filters input[type="checkbox"] {
-    display: none;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+
+}
+
+  input:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 1px;
+    outline: 1px solid #666;
 }
 
 .filters input[type="checkbox"]+label span {
     display: inline-block;
-    width: 20px;
+    width: 23px;
     height: 20px;
     margin: -1px 10px 0 -1px;
     vertical-align: middle;
     background: url("../img/svg-gllacy/checkbox-off.svg") left top no-repeat;
     cursor: pointer;
-    background-size: cover
+    background-size: contain;
 }
 
 .filters input[type="checkbox"]:checked+label span {
     background: url("../img/svg-gllacy/checkbox-on.svg") left top no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* end стилизация чекбоксов */
@@ -1590,6 +1598,10 @@ select:hover::-ms-value{
 
 .footer__menu .footer__menu_item:nth-child(2n-1) {
     width: 40%;
+}
+
+.footer__menu_item a{
+    text-decoration: none;
 }
 
 .footer__menu_item:nth-child(1) a{
@@ -1850,7 +1862,7 @@ button.subscription__btn {
     margin-right: 27px;
 }
 
-h1 {
+main h1 {
     margin-top: 0;
     margin-bottom: 48px;
 }
@@ -2077,6 +2089,7 @@ section.slider {
     font-size: 13px;
     color: #323232;
     line-height: 14px;
+    text-decoration: none;
 }
 
 .login a:hover {
@@ -2457,7 +2470,12 @@ body { background: url("../img/training-background/gllacy-catalog.jpg") top cent
     color: #323232;  
 }
 
-
+.filter-btn-max:hover::after,
+.filter-btn-min:hover::before {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale3d(1.1);
+    -o-transform: scale(1.1);
+}
 
 /* зехеры IE */
 
@@ -2473,19 +2491,20 @@ fieldset.filter:nth-child(2) > span{
     margin-left: 6px;
 }
 
-.filter:nth-child(2) .filter-btn::before {
+.filter-btn-min::before {
     content: "";
     position: absolute;
     top: 8px;
     left: 34px;
-    background: url(../img/svg-gllacy/filter-button.svg) top center no-repeat;
+    background: url("../img/svg-gllacy/filter-button.svg") top center no-repeat;
     width: 25px;
     height: 25px;
     cursor: pointer;
     display: inline-block;
+    vertical-align: middle;
 }
 
-.filter:nth-child(2) .filter-btn::after {
+.filter-btn-max::after {
     content: "";
     position: absolute;
     top: 8px;
@@ -2502,9 +2521,71 @@ fieldset.filter:nth-child(2) > span{
 .bestseller li {
     padding: 6px 13px 16px 13px;
 }
+
+.nav__item {
+    top:12px;
+}
+
+.filter-btn-max:hover::after,
+.filter-btn-min:hover::before {
+    zoom:1.1;
+    margin-left:-1px;
+    margin-top:-1px;
+}
+
+.filter-btn-max:hover::after {
+    zoom:1.1;
+    margin-left:-1px;
+    margin-top:-1px;
+}
+
+.map__feedback__name input:-ms-input-placeholder,
+.map__feedback__email input:-ms-input-placeholder,
+.map__feedback__text textarea:-ms-input-placeholder,
+.subscription__inp input:-ms-input-placeholder,
+.login input:-ms-input-placeholder,
+.search input:-ms-input-placeholder,
+.subscription__form-mailing input:-ms-input-placeholder {
+    border: solid 1px rgba(178, 178, 178, 0.52);
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 400;
+    color:#999999;
+}
+
+.filters input[type="checkbox"]+label span {
+    width: 24px;
+    height: 21px;
+}
+
 }
 
 /* end зехеры IE */
+
+.underline__footer,
+.underline__product,
+.underline__nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.underline__news,
+.underline__login{
+    border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+}
+
+a:hover .underline__footer,
+a:hover .underline__news,
+a:hover .underline__product,
+a:hover .underline__link,
+a:hover .underline__login{
+    border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+
+
+
 
 
 
